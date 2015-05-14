@@ -122,10 +122,10 @@
                 } else {
                     imgRef = [assetRep fullScreenImage];
                 }
-                UIImage *img = [UIImage imageWithCGImage:imgRef
-                                                   scale:1.0f
-                                             orientation:orientation];
-                [workingDictionary setObject:img forKey:UIImagePickerControllerOriginalImage];
+                // UIImage *img = [UIImage imageWithCGImage:imgRef
+                //                                    scale:1.0f
+                //                              orientation:orientation];
+                // [workingDictionary setObject:img forKey:UIImagePickerControllerOriginalImage];
             }
 
             [workingDictionary setObject:[[asset valueForProperty:ALAssetPropertyURLs] valueForKey:[[[asset valueForProperty:ALAssetPropertyURLs] allKeys] objectAtIndex:0]] forKey:UIImagePickerControllerReferenceURL];
